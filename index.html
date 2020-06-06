@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>testvux</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="./static/favicon.png" type="image/x-icon">
+    <title>EOAUI-Mobile</title>
   </head>
-  <body>
-    <div id="app-box"></div>
-    <!-- built files will be auto injected -->
+  <body ontouchstart>
+    <div id="app"></div>
+    <%=htmlWebpackPlugin.files.webpackManifest%>
+    <!-- for v-chart demo -->
+    <script src="https://gw.alipayobjects.com/os/antv/assets/lib/jquery-3.2.1.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/rmsportal/NjNldKHIVQRozfbAOJUW.js"></script>
   </body>
 </html>
