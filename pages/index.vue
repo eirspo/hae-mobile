@@ -137,10 +137,7 @@ export default {
     ...mapState({
       route: state => state.route,
       path: state => state.route.path,
-      deviceready: state => state.app.deviceready,
-      demoTop: state => state.vux.demoScrollTop,
-      isLoading: state => state.vux.isLoading,
-      direction: state => state.vux.direction
+      deviceready: state => state.app.deviceready
     }),
     isShowBar () {
       if (this.entryUrl.indexOf('hide-tab-bar') > -1) {
@@ -211,9 +208,9 @@ export default {
 </script>
 
 <style lang="less">
-@import '~vux/src/styles/reset.less';
-@import '~vux/src/styles/1px.less';
-@import '~vux/src/styles/tap.less';
+@import '~hae/src/styles/reset.less';
+@import '~hae/src/styles/1px.less';
+@import '~hae/src/styles/tap.less';
 
 body {
   background-color: #fbf9fe;

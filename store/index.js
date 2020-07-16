@@ -26,44 +26,6 @@ const haeStore = () => {
     
     Vue.use(vuexI18n.plugin, store)
 
-    // Vue.use(LocalePlugin)
-    // const nowLocale = Vue.locale.get()
-    // if (/zh/.test(nowLocale)) {
-    //   Vue.i18n.set('zh-CN')
-    // } else {
-    //   Vue.i18n.set('en')
-    // }
-
-    // no transitoin in demo site
-    const shouldUseTransition = !/transition=none/.test(location.href)
-
-    store.registerModule('vux', {
-        state: {
-            demoScrollTop: 0,
-            isLoading: false,
-            direction: shouldUseTransition ? 'forward' : ''
-        },
-        mutations: {
-            updateDemoPosition (state, payload) {
-            state.demoScrollTop = payload.top
-            },
-            updateLoadingStatus (state, payload) {
-            state.isLoading = payload.isLoading
-            },
-            updateDirection (state, payload) {
-            if (!shouldUseTransition) {
-                return
-            }
-            state.direction = payload.direction
-            }
-        },
-        actions: {
-            updateDemoPosition ({commit}, top) {
-            commit({type: 'updateDemoPosition', top: top})
-            }
-        }
-    })
-
     sync(store, router)
 
     // simple history management

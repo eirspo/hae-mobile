@@ -22,7 +22,10 @@
 </template>
 
 <script>
-import { Cell, Group, Badge, Divider } from 'vux'
+import { Cell } from 'hae'
+import {  Group } from 'hae'
+import {  Badge } from 'hae'
+import {  Divider } from 'hae'
 
 import pkg from '../../package.json'
 const version = pkg.version

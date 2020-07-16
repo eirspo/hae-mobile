@@ -1,6 +1,18 @@
 import Vue from 'vue'
-import { DatetimePlugin, CloseDialogsPlugin, ConfigPlugin, BusPlugin, LocalePlugin, AjaxPlugin, AppPlugin, DevicePlugin, TransferDom, WechatPlugin, LoadingPlugin, ToastPlugin, AlertPlugin, ConfirmPlugin } from 'vux'
-
+import { DatetimePlugin } from 'hae'
+import {  CloseDialogsPlugin } from 'hae'
+import {  ConfigPlugin } from 'hae'
+import {  BusPlugin } from 'hae'
+import {  LocalePlugin } from 'hae'
+import {  AjaxPlugin } from 'hae'
+import {  AppPlugin } from 'hae'
+import {  DevicePlugin } from 'hae'
+import {  TransferDom } from 'hae'
+import {  WechatPlugin } from 'hae'
+import {  LoadingPlugin } from 'hae'
+import {  ToastPlugin } from 'hae'
+import {  AlertPlugin } from 'hae'
+import {  ConfirmPlugin } from 'hae'
 Vue.use(DatetimePlugin)
 Vue.use(LoadingPlugin)
 Vue.use(ToastPlugin)
@@ -26,6 +38,7 @@ Vue.use(ConfigPlugin, {
   Vue.use(AjaxPlugin)
   Vue.use(BusPlugin)
   Vue.use(DatetimePlugin)
+  Vue.use(CloseDialogsPlugin)
   
   // test
   if (process.env.platform === 'app') {

@@ -1,5 +1,4 @@
 const path = require('path')
-const vuxLoader = require('vux-loader')
 
 module.exports = {
   mode: 'spa',
@@ -24,12 +23,14 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
-  /*
+ 
+/*
   ** Global CSS
   */
   css: [
-    'vux/src/styles/reset.less',
-    'vux/src/styles/1px.less'
+    'hae/src/styles/1px.less',
+    'hae/src/styles/reset.less',
+    'hae/src/styles/tap.less'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -53,22 +54,21 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+
   ],
   /*
   ** Build configuration
   */
   build: {
-    extend(config, { isDev, isClient }) {
-      const configs = vuxLoader.merge(config, {
-        options: {
-          ssr: true
-        },
-        plugins: ['vux-ui', {
-          name: 'less-theme',
-          path: path.join(__dirname, './styles/theme.less')
-        }]
-      })
-      return configs
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.forEach(item => {
+          if(item.loader == 'babel-loader') {
+            delete item.exclude;
+            item.include = /node_modules\/hae\/src|\.nuxt|src/
+          }
+        })
+      }
     }
   },
   server: {
