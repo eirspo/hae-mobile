@@ -81,4 +81,4 @@ Vue.use(ConfigPlugin, {
   const FastClick = require('fastclick')
   FastClick.attach(document.body)
   
-//   Vue.use(CloseDialogsPlugin)
+  Vue.use(CloseDialogsPlugin)

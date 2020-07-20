@@ -30,19 +30,15 @@ module.exports = {
   css: [
     'hae/src/styles/1px.less',
     'hae/src/styles/reset.less',
-    'hae/src/styles/tap.less'
+    'hae/src/styles/tap.less',
+    'hae/src/styles/weui/icon/weui_icon_font.less'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     {
-      src: '~/plugins/vux-plugins',
-      ssr: false
-    },
-    {
-      src: '~/plugins/vux-components',
-      ssr: true
+      src:'~/plugins/hae.js'
     }
   ],
   /*
@@ -65,7 +61,7 @@ module.exports = {
         config.module.rules.forEach(item => {
           if(item.loader == 'babel-loader') {
             delete item.exclude;
-            item.include = /node_modules\/hae\/src|\.nuxt|src/
+            item.include = /node_modules\/hae\/src\/components|\.nuxt|src/
           }
         })
       }
