@@ -17,11 +17,11 @@ export default {
           title:'布局',
           content:[{
             title: 'flex',
-            path: '/components/flex'
+            path: '/layouts/flex'
           },
           {
             title: 'grid',
-            path: '/components/grid'
+            path: '/layouts/grid'
           }
           ]
         },
@@ -79,6 +79,10 @@ export default {
             {
               title: 'rate',
               path: '/form/rate'
+            },
+            {
+              title: 'calendar',
+              path: '/form/calendar'
             }
           ]
         },
@@ -112,14 +116,6 @@ export default {
             {
               title: 'swiperaction',
               path: '/feedback/swiperaction'
-            },
-            {
-              title: 'imgpreview',
-              path: '/feedback/imgpreview'
-            },
-            {
-              title: 'calendar',
-              path: '/feedback/calendar'
             }
           ]
         },
@@ -148,8 +144,8 @@ export default {
               path: '/view/card'
             },
             {
-              title: 'carsousel',
-              path: '/view/carsousel'
+              title: 'carousel',
+              path: '/view/carousel'
             },
             {
               title: 'table',
@@ -165,7 +161,11 @@ export default {
             },
             {
               title: 'lazyload',
-              path: '/feedback/lazyload'
+              path: '/view/lazyload'
+            },
+            {
+              title: 'imgpreview',
+              path: '/view/imgpreview'
             }
           ]
         },
