@@ -95,15 +95,7 @@ export default {
     Divider
   },
   mounted() {
-    hae.request({
-      url: 'https://www.baidu.com',
-      type: 'post',
-      params: {
-        act: 'getJoke',
-        page: 1,
-        count: 10
-      }
-    }) 
+
   }
 }
 </script>

@@ -8,7 +8,7 @@
     :drawer-style="{'background-color':'#35495e', width: '200px'}">
       <!-- main content -->
       <view-box ref="viewBox">
-        <nuxt keep-alive />
+        <nuxt keep-alive/>
         <tabbar class="vux-demo-tabbar" icon-class="vux-center" v-show="!isTabbarDemo && isShowBar" slot="bottom">
           <tabbar-item :link="{path:'/'}" :selected="route.path === '/'">
             <span class="iconfont icon-component" slot="icon" style="position:relative;top: -2px;"></span>
@@ -18,7 +18,7 @@
             <span class="iconfont icon-interface" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">接口</span>
           </tabbar-item>
-          <tabbar-item :link="{path:'/sense'}" :selected="route.path === '/sense'">
+          <tabbar-item :link="{path:'/sense'}" :selected="route.path === '/sence'">
             <span class="iconfont icon-scene" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">场景</span>
           </tabbar-item>
@@ -85,8 +85,7 @@ export default {
   computed: {
     ...mapState({
       route: state => state.route,
-      path: state => state.route.path,
-      deviceready: state => state.app.deviceready
+      path: state => state.route.path
     }),
     isShowBar () {
       if (this.entryUrl.indexOf('hide-tab-bar') > -1) {
@@ -112,6 +111,9 @@ export default {
       showModeValue: 'push',
       showPlacementValue: 'left'
     }
+  },
+  mounted() {
+
   }
 }
 </script>

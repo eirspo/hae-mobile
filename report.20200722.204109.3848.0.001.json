@@ -4,10 +4,10 @@
     "reportVersion": 2,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200721.194738.12404.0.001.json",
-    "dumpEventTime": "2020-07-21T19:47:38Z",
-    "dumpEventTimeStamp": "1595332058278",
-    "processId": 12404,
+    "filename": "report.20200722.204109.3848.0.001.json",
+    "dumpEventTime": "2020-07-22T20:41:09Z",
+    "dumpEventTimeStamp": "1595421669626",
+    "processId": 3848,
     "threadId": null,
     "cwd": "D:\\workspace\\company\\eoa-h5-app",
     "commandLine": [
@@ -51,74 +51,74 @@
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 4066609,
+        "user": 1077187,
         "nice": 0,
-        "sys": 5369656,
-        "idle": 81653656,
-        "irq": 2554515
+        "sys": 1527343,
+        "idle": 15362984,
+        "irq": 778750
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 2992093,
+        "user": 721921,
         "nice": 0,
-        "sys": 1335593,
-        "idle": 86761843,
-        "irq": 40250
+        "sys": 351781,
+        "idle": 16893437,
+        "irq": 20156
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 6157968,
+        "user": 1570421,
         "nice": 0,
-        "sys": 3000140,
-        "idle": 81931421,
-        "irq": 50500
+        "sys": 817125,
+        "idle": 15579593,
+        "irq": 45734
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 3622046,
+        "user": 820921,
         "nice": 0,
-        "sys": 1520281,
-        "idle": 85947187,
-        "irq": 24078
+        "sys": 380843,
+        "idle": 16765359,
+        "irq": 22703
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 5267406,
+        "user": 1234921,
         "nice": 0,
-        "sys": 2451093,
-        "idle": 83371015,
-        "irq": 50390
+        "sys": 672421,
+        "idle": 16059781,
+        "irq": 37218
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 3651609,
+        "user": 791000,
         "nice": 0,
-        "sys": 2094640,
-        "idle": 85343265,
-        "irq": 24265
+        "sys": 338296,
+        "idle": 16837828,
+        "irq": 15953
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 5297796,
+        "user": 1290140,
         "nice": 0,
-        "sys": 3069890,
-        "idle": 82721828,
-        "irq": 41312
+        "sys": 531984,
+        "idle": 16145000,
+        "irq": 33000
       },
       {
         "model": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 4740906,
+        "user": 1119171,
         "nice": 0,
-        "sys": 1473843,
-        "idle": 84874765,
-        "irq": 23984
+        "sys": 442562,
+        "idle": 16405390,
+        "irq": 23218
       }
     ],
     "networkInterfaces": [
@@ -235,79 +235,99 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff653be2309",
+      "pc": "0x00007ff6f7de2309",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+11577"
     },
     {
-      "pc": "0x00007ff653be6869",
+      "pc": "0x00007ff6f7de6869",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+29337"
     },
     {
-      "pc": "0x00007ff653be56e8",
+      "pc": "0x00007ff6f7de56e8",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24856"
     },
     {
-      "pc": "0x00007ff653d0dd82",
+      "pc": "0x00007ff6f7f0dd82",
       "symbol": "v8::base::CPU::has_sse+59378"
     },
     {
-      "pc": "0x00007ff65452a27e",
+      "pc": "0x00007ff6f872a27e",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff654512351",
+      "pc": "0x00007ff6f8712351",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff6543de8ac",
+      "pc": "0x00007ff6f85de8ac",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff6543e9ae0",
+      "pc": "0x00007ff6f85e9ae0",
       "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
     },
     {
-      "pc": "0x00007ff6543e6604",
+      "pc": "0x00007ff6f85e6604",
       "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
     },
     {
-      "pc": "0x00007ff6543dbe03",
+      "pc": "0x00007ff6f85dbe03",
       "symbol": "v8::internal::Heap::CollectGarbage+1283"
     },
     {
-      "pc": "0x00007ff6543da474",
+      "pc": "0x00007ff6f85da474",
       "symbol": "v8::internal::Heap::AddRetainedMap+2452"
     },
     {
-      "pc": "0x00007ff6543fb67d",
+      "pc": "0x00007ff6f85fb67d",
       "symbol": "v8::internal::Factory::NewFillerObject+61"
     },
     {
-      "pc": "0x00007ff6541613d1",
+      "pc": "0x00007ff6f83613d1",
       "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
     },
     {
-      "pc": "0x00007ff65497730d",
+      "pc": "0x00007ff6f8b7730d",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
     },
     {
-      "pc": "0x00007ff65495d10f",
-      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+439631"
+      "pc": "0x00007ff6f8b7823d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+550525"
     },
     {
-      "pc": "0x00007ff65491eea7",
-      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+185063"
+      "pc": "0x00007ff6f8bbbe81",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+828097"
     },
     {
-      "pc": "0x0000030fdfdf2cfe",
+      "pc": "0x00007ff6f8b8ab8d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+626637"
+    },
+    {
+      "pc": "0x00007ff6f8afc2bc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+42748"
+    },
+    {
+      "pc": "0x00007ff6f8afc2bc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+42748"
+    },
+    {
+      "pc": "0x00007ff6f8b92c19",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+659545"
+    },
+    {
+      "pc": "0x00007ff6f8afc2bc",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+42748"
+    },
+    {
+      "pc": "0x00000023489024e5",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2155454464,
-    "totalCommittedMemory": 2155454464,
-    "usedMemory": 2088266128,
-    "availableMemory": 46485232,
+    "totalMemory": 2174074880,
+    "totalCommittedMemory": 2174074880,
+    "usedMemory": 2107600296,
+    "availableMemory": 63583296,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -318,38 +338,38 @@
         "available": 0
       },
       "new_space": {
-        "memorySize": 4194304,
-        "committedMemory": 4194304,
-        "capacity": 2094912,
-        "used": 111968,
-        "available": 1982944
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759296,
+        "used": 3708128,
+        "available": 13051168
       },
       "old_space": {
-        "memorySize": 775561216,
-        "committedMemory": 775561216,
-        "capacity": 725523520,
-        "used": 725476976,
-        "available": 46544
+        "memorySize": 631906304,
+        "committedMemory": 631906304,
+        "capacity": 616634832,
+        "used": 606602416,
+        "available": 10032416
       },
       "code_space": {
         "memorySize": 3051520,
         "committedMemory": 3051520,
-        "capacity": 2415840,
-        "used": 2415840,
+        "capacity": 2562432,
+        "used": 2562432,
         "available": 0
       },
       "map_space": {
-        "memorySize": 13635584,
-        "committedMemory": 13635584,
-        "capacity": 2332960,
-        "used": 2332960,
+        "memorySize": 11538432,
+        "committedMemory": 11538432,
+        "capacity": 2605840,
+        "used": 2605840,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 1357545472,
-        "committedMemory": 1357545472,
-        "capacity": 1356801144,
-        "used": 1356801144,
+        "memorySize": 1492557824,
+        "committedMemory": 1492557824,
+        "capacity": 1490994240,
+        "used": 1490994240,
         "available": 0
       },
       "code_large_object_space": {
@@ -362,24 +382,24 @@
       "new_large_object_space": {
         "memorySize": 0,
         "committedMemory": 0,
-        "capacity": 2094912,
+        "capacity": 16759296,
         "used": 0,
-        "available": 2094912
+        "available": 16759296
       }
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 159.078,
-    "kernelCpuSeconds": 10.484,
-    "cpuConsumptionPercent": 12.0685,
-    "maxRss": 2561744896,
+    "userCpuSeconds": 475.515,
+    "kernelCpuSeconds": 28.406,
+    "cpuConsumptionPercent": 31.0487,
+    "maxRss": 2777935872,
     "pageFaults": {
-      "IORequired": 2681711,
+      "IORequired": 8116815,
       "IONotRequired": 0
     },
     "fsActivity": {
-      "reads": 5157,
-      "writes": 50
+      "reads": 6207,
+      "writes": 54
     }
   },
   "libuv": [
@@ -410,6 +430,8 @@
     "dp0": "D:\\workspace\\company\\eoa-h5-app\\node_modules\\.bin\\",
     "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
     "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
     "GIT_ASKPASS": "d:\\software\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
     "HOME": "C:\\Users\\仅此，而已",
     "HOMEDRIVE": "C:",
@@ -555,9 +577,11 @@
     "npm_package_author_name": "missing-star",
     "npm_package_browserslist_0": "iOS >= 7",
     "npm_package_browserslist_1": "Android >= 4.1",
-    "npm_package_dependencies_axios": "^0.19.2",
-    "npm_package_dependencies_hae": "^1.0.18",
+    "npm_package_dependencies_hae": "^1.0.20",
     "npm_package_dependencies_nuxt": "1.4.2",
+    "npm_package_dependencies__gauseen_nuxt_proxy": "^1.0.1",
+    "npm_package_dependencies__nuxtjs_axios": "^5.12.0",
+    "npm_package_dependencies__nuxtjs_proxy": "^2.0.1",
     "npm_package_description": "H5 App Framework Based On EOA-UI",
     "npm_package_devDependencies_less": "^2.7.3",
     "npm_package_devDependencies_less_loader": "^4.0.6",
@@ -565,7 +589,7 @@
     "npm_package_devDependencies_vuex_i18n": "^1.3.1",
     "npm_package_devDependencies_vuex_router_sync": "^4.2.0",
     "npm_package_devDependencies_vue_router": "^2.5.3",
-    "npm_package_gitHead": "5d0aa15a5d8f7af74d3444a4eec9ba8d3bc5d680",
+    "npm_package_gitHead": "608bab5566d72940e82d64c1cc18fcba5af9281e",
     "npm_package_name": "hae",
     "npm_package_private": "true",
     "npm_package_readmeFilename": "README.md",
@@ -580,8 +604,8 @@
     "OneDriveConsumer": "C:\\Users\\仅此，而已\\OneDrive",
     "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
     "OS": "Windows_NT",
-    "Path": "D:\\software\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;D:\\workspace\\company\\eoa-h5-app\\node_modules\\.bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\仅此，而已\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_202\\bin;D:\\software\\xshell;D:\\software\\xftp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;D:\\software\\nodejs;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\python;C:\\Program Files\\python\\Scripts;D:\\software\\BtSoft\\panel\\script;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;D:\\software\\Microsoft VS Code\\bin;D:\\fidder\\Fiddler;C:\\Users\\仅此，而已\\AppData\\Roaming\\npm;C:\\U;ers\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\s;ftware\\Fiddler;D:\\software\\Docker Toolbox;C:\\Users\\仅此，而已\\AppData\\Local\\Yarn\\bin",
-    "PATH": "D:\\software\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;D:\\workspace\\company\\eoa-h5-app\\node_modules\\.bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\仅此，而已\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_202\\bin;D:\\software\\xshell;D:\\software\\xftp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;D:\\software\\nodejs;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\python;C:\\Program Files\\python\\Scripts;D:\\software\\BtSoft\\panel\\script;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;D:\\software\\Microsoft VS Code\\bin;D:\\fidder\\Fiddler;C:\\Users\\仅此，而已\\AppData\\Roaming\\npm;C:\\U;ers\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\s;ftware\\Fiddler;D:\\software\\Docker Toolbox;C:\\Users\\仅此，而已\\AppData\\Local\\Yarn\\bin",
+    "Path": "D:\\software\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;D:\\workspace\\company\\eoa-h5-app\\node_modules\\.bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\仅此，而已\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_202\\bin;D:\\software\\xshell;D:\\software\\xftp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;D:\\software\\nodejs;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\python;C:\\Program Files\\python\\Scripts;D:\\software\\BtSoft\\panel\\script;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;D:\\fidder\\Fiddler;C:\\Users\\仅此，而已\\AppData\\Roaming\\npm;C:\\U;ers\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\s;ftware\\Fiddler;D:\\software\\Docker Toolbox;C:\\Users\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\software\\Microsoft VS Code\\bin",
+    "PATH": "D:\\software\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;D:\\workspace\\company\\eoa-h5-app\\node_modules\\.bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\仅此，而已\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files\\Java\\jdk1.8.0_202\\bin;D:\\software\\xshell;D:\\software\\xftp;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Intel\\WiFi\\bin;C:\\Program Files\\Common Files\\Intel\\WirelessCommon;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;D:\\software\\nodejs;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files\\python;C:\\Program Files\\python\\Scripts;D:\\software\\BtSoft\\panel\\script;C:\\Program Files\\Git\\cmd;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;D:\\fidder\\Fiddler;C:\\Users\\仅此，而已\\AppData\\Roaming\\npm;C:\\U;ers\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\s;ftware\\Fiddler;D:\\software\\Docker Toolbox;C:\\Users\\仅此，而已\\AppData\\Local\\Yarn\\bin;D:\\software\\Microsoft VS Code\\bin",
     "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
     "PLINK_PROTOCOL": "ssh",
     "PROCESSOR_ARCHITECTURE": "AMD64",
@@ -618,6 +642,7 @@
     "WINDIR": "C:\\Windows",
     "WXDRIVE_START_ARGS": "--wxdrive-setting=0 --disable-gpu --disable-software-rasterizer --enable-features=NetworkServiceInProcess",
     "_": "D:/software/nodejs/node.exe",
+    "_AXIOS_BASE_URL_": "http://localhost:8000/",
     "_prog": "node"
   },
   "sharedObjects": [
@@ -630,8 +655,8 @@
     "C:\\Windows\\System32\\PSAPI.DLL",
     "C:\\Windows\\SYSTEM32\\dbghelp.dll",
     "C:\\Windows\\System32\\ADVAPI32.dll",
-    "C:\\Windows\\System32\\msvcrt.dll",
     "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
     "C:\\Windows\\System32\\sechost.dll",
     "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
     "C:\\Windows\\System32\\USER32.dll",

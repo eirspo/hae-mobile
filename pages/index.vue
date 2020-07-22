@@ -17,11 +17,11 @@ export default {
           title:'布局',
           content:[{
             title: 'flex',
-            path: '/layouts/flex'
+            path: '/components/layouts/flex'
           },
           {
             title: 'grid',
-            path: '/layouts/grid'
+            path: '/components/layouts/grid'
           }
           ]
         },
@@ -30,59 +30,59 @@ export default {
           content:[
             {
               title: 'input',
-              path: '/form/input'
+              path: '/components/form/input'
             },
             {
               title: 'textarea',
-              path: '/form/textarea'
+              path: '/components/form/textarea'
             },
             {
               title: 'button',
-              path: '/form/button'
+              path: '/components/form/button'
             },
             {
               title: 'checker',
-              path: '/form/checker'
+              path: '/components/form/checker'
             },
             {
               title: 'picker',
-              path: '/form/picker'
+              path: '/components/form/picker'
             },
             {
               title: 'date-picker',
-              path: '/form/date-picker'
+              path: '/components/form/date-picker'
             },
             {
               title: 'image-picker',
-              path: '/form/image-picker'
+              path: '/components/form/image-picker'
             },
             {
               title: 'searchbar',
-              path: '/form/searchbar'
+              path: '/components/form/searchbar'
             },
             {
               title: 'stepper',
-              path: '/form/stepper'
+              path: '/components/form/stepper'
             },
             {
               title: 'switch',
-              path: '/form/switch'
+              path: '/components/form/switch'
             },
             {
               title: 'steps',
-              path: '/form/steps'
+              path: '/components/form/steps'
             },
             {
               title: 'progress',
-              path: '/form/progress'
+              path: '/components/form/progress'
             },
             {
               title: 'rate',
-              path: '/form/rate'
+              path: '/components/form/rate'
             },
             {
               title: 'calendar',
-              path: '/form/calendar'
+              path: '/components/form/calendar'
             }
           ]
         },
@@ -91,31 +91,31 @@ export default {
           content:[
             {
               title: 'modal',
-              path: '/feedback/modal'
+              path: '/components/feedback/modal'
             },
             {
               title: 'toast',
-              path: '/feedback/toast'
+              path: '/components/feedback/toast'
             },
             {
               title: 'loading',
-              path: '/feedback/loading'
+              path: '/components/feedback/loading'
             },
             {
               title: 'popup',
-              path: '/feedback/popup'
+              path: '/components/feedback/popup'
             },
             {
               title: 'actionsheet',
-              path: '/feedback/actionsheet'
+              path: '/components/feedback/actionsheet'
             },
             {
               title: 'pull-refresh',
-              path: '/feedback/pull-refresh'
+              path: '/components/feedback/pull-refresh'
             },
             {
               title: 'swiperaction',
-              path: '/feedback/swiperaction'
+              path: '/components/feedback/swiperaction'
             }
           ]
         },
@@ -124,11 +124,11 @@ export default {
           content:[
             {
               title: 'slider',
-              path: '/data/slider'
+              path: '/components/data/slider'
             },
             {
               title: 'range',
-              path: '/data/range'
+              path: '/components/data/range'
             }
           ]
         },
@@ -137,35 +137,35 @@ export default {
           content:[
             {
               title: 'accordion',
-              path: '/view/accordion'
+              path: '/components/view/accordion'
             },
             {
               title: 'card',
-              path: '/view/card'
+              path: '/components/view/card'
             },
             {
               title: 'carousel',
-              path: '/view/carousel'
+              path: '/components/view/carousel'
             },
             {
               title: 'table',
-              path: '/view/table'
+              path: '/components/view/table'
             },
             {
               title: 'tag',
-              path: '/view/tag'
+              path: '/components/view/tag'
             },
             {
               title: 'list',
-              path: '/view/list'
+              path: '/components/view/list'
             },
             {
               title: 'lazyload',
-              path: '/view/lazyload'
+              path: '/components/view/lazyload'
             },
             {
               title: 'imgpreview',
-              path: '/view/imgpreview'
+              path: '/components/view/imgpreview'
             }
           ]
         },
@@ -174,23 +174,23 @@ export default {
           content:[
             {
               title: 'tab',
-              path: '/navigation/tab'
+              path: '/components/navigation/tab'
             },
             {
               title: 'tabbar',
-              path: '/navigation/tabbar'
+              path: '/components/navigation/tabbar'
             },
             {
               title: 'header',
-              path: '/navigation/header'
+              path: '/components/navigation/header'
             },
             {
               title: 'menu',
-              path: '/navigation/menu'
+              path: '/components/navigation/menu'
             },
             {
               title: 'pagination',
-              path: '/navigation/pagination'
+              path: '/components/navigation/pagination'
             }
           ]
         },
@@ -199,15 +199,15 @@ export default {
           content:[
             {
               title: 'badge',
-              path: '/navigation/badge'
+              path: '/components/tools/badge'
             },
             {
               title: 'popover',
-              path: '/navigation/popover'
+              path: '/components/tools/popover'
             },
             {
               title: 'icon',
-              path: '/navigation/icon'
+              path: '/components/tools/icon'
             }
           ]
         }

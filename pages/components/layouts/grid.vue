@@ -3,26 +3,26 @@
     <group-title>2 列</group-title>
     <grid>
       <grid-item label="Grid" v-for="i in 2" :key="i">
-        <img slot="icon" src="../../static/grid_icon.png">
+        <img slot="icon" src="../../../static/grid_icon.png">
       </grid-item>
     </grid>
     <group-title>3 列</group-title>
     <grid :show-lr-borders="false" :show-vertical-dividers="false">
       <grid-item link="/component/cell" label="Go to Cell">
-        <img slot="icon" src="../../static/grid_icon.png">
+        <img slot="icon" src="../../../static/grid_icon.png">
       </grid-item>
       <grid-item :link="{ path: '/component/cell'}" label="Go to Cell">
-        <img slot="icon" src="../../static/grid_icon.png">
+        <img slot="icon" src="../../../static/grid_icon.png">
       </grid-item>
       <grid-item link="/component/cell" @on-item-click="onItemClick">
-        <img slot="icon" src="../../static/grid_icon.png">
+        <img slot="icon" src="../../../static/grid_icon.png">
         <span slot="label">Go to Cell</span>
       </grid-item>
     </grid>
     <group-title>4 列</group-title>
     <grid :show-lr-borders="false">
       <grid-item label="Grid')" v-for="i in 4" :key="i">
-        <img slot="icon" src="../../static/grid_icon.png">
+        <img slot="icon" src="../../../static/grid_icon.png">
       </grid-item>
     </grid>
     <group-title> 自定义内容 </group-title>

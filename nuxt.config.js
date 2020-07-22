@@ -50,21 +50,18 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-
   ],
   /*
   ** Build configuration
   */
   build: {
     extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.forEach(item => {
-          if(item.loader == 'babel-loader') {
-            delete item.exclude;
-            item.include = /node_modules\/hae\/src\/components|\.nuxt|src/
-          }
-        })
-      }
+      config.module.rules.forEach(item => {
+        if(item.loader == 'babel-loader') {
+          delete item.exclude;
+          item.include = /node_modules\/hae\/src\/components|\.nuxt|src/
+        }
+      })
     }
   },
   server: {
