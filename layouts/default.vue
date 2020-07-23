@@ -18,7 +18,7 @@
             <span class="iconfont icon-interface" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">接口</span>
           </tabbar-item>
-          <tabbar-item :link="{path:'/sense'}" :selected="route.path === '/sence'">
+          <tabbar-item :link="{path:'/scene'}" :selected="route.path === '/scene'">
             <span class="iconfont icon-scene" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">场景</span>
           </tabbar-item>

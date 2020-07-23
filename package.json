@@ -15,7 +15,7 @@
     "@gauseen/nuxt-proxy": "^1.0.1",
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/proxy": "^2.0.1",
-    "hae": "^1.0.20",
+    "hae": "^1.0.21",
     "nuxt": "1.4.2"
   },
   "devDependencies": {

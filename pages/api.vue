@@ -23,6 +23,34 @@ export default {
             title: 'hae.uploadFile',
             path: '/apis/upload'
           }]
+        },
+        {
+          title:'界面交互',
+          content:[
+          {
+            title: 'toast',
+            path: '/apis/toast'
+          },
+          {
+            title: 'loading',
+            path: '/apis/loading'
+          },
+          {
+            title: 'modal',
+            path: '/apis/modal'
+          }]
+        },
+        {
+          title:'本地存储',
+          content:[
+          {
+            title: 'localStorage',
+            path: '/apis/localStorage'
+          },
+          {
+            title: 'sessionStorage',
+            path: '/apis/sessionStorage'
+          }]
         }
       ]
     }

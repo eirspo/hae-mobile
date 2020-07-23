@@ -39,6 +39,9 @@ module.exports = {
   plugins: [
     {
       src:'~/plugins/hae.js'
+    },
+    {
+      src:'~/plugins/vuex-router.js'
     }
   ],
   /*
