@@ -1,9 +1,8 @@
 <template>
   <div>
-    <x-button @click.native="showModal">点击</x-button>
-    <x-button @click.native="showModal2">不显示cancel</x-button>
-    <x-button @click.native="showModal3">显示input</x-button>
-    <x-button @click.native="showModal4">显示placeholder</x-button>
+    <x-button @click.native="alert">alert</x-button>
+    <x-button @click.native="confirm">confirm</x-button>
+    <x-button @click.native="prompt">prompt</x-button>
   </div>
 </template>
 <script>
@@ -13,28 +12,27 @@ export default {
     XButton
   },
   methods: {
-    showModal () {
-      hae.showModal({
-        content:'go'
+    alert () {
+      hae.alert({
+        content:'go',
+        confirmText:'哈哈哈'
       });
     },
-    showModal2 () {
-      hae.showModal({
-        content:'not show cancel',
-        showCancel: false
+    confirm () {
+      hae.confirm({
+        content:'确认删除吗？',
+        cancelText: 'no way',
+        confirmText: '可以'
       });
     },
-    showModal3 () {
-      hae.showModal({
-        content: 'show input',
-        showInput: true
-      });
-    },
-    showModal4 () {
-      hae.showModal({
-        content: 'show placeholder',
-        showInput: true,
-        placeholder: '请输入内容'
+    prompt () {
+      hae.prompt({
+        placeholder:'请输入年龄',
+        cancelText: '保密',
+        confirmText: '好的',
+        onConfirm: res => {
+          console.log(res)
+        }
       });
     }
   }

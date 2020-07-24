@@ -38,6 +38,14 @@ export default {
           {
             title: 'modal',
             path: '/apis/modal'
+          },
+          {
+            title: 'actionsheet',
+            path: '/apis/actionsheet'
+          },
+          {
+            title: 'previewImage',
+            path: '/apis/previewImage'
           }]
         },
         {
@@ -46,10 +54,6 @@ export default {
           {
             title: 'localStorage',
             path: '/apis/localStorage'
-          },
-          {
-            title: 'sessionStorage',
-            path: '/apis/sessionStorage'
           }]
         }
       ]

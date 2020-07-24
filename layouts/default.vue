@@ -10,19 +10,19 @@
       <view-box ref="viewBox">
         <nuxt keep-alive/>
         <tabbar class="vux-demo-tabbar" icon-class="vux-center" v-show="!isTabbarDemo && isShowBar" slot="bottom">
-          <tabbar-item :link="{path:'/'}" :selected="route.path === '/'">
+          <tabbar-item :link="{path:'/'}" :selected="route.path === '/' || route.path.indexOf('/components') !== -1">
             <span class="iconfont icon-component" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">组件</span>
           </tabbar-item>
-          <tabbar-item :link="{path:'/api'}" :selected="route.path === '/api'">
+          <tabbar-item :link="{path:'/api'}" :selected="route.path === '/api' || route.path.indexOf('/apis') !== -1">
             <span class="iconfont icon-interface" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">接口</span>
           </tabbar-item>
-          <tabbar-item :link="{path:'/scene'}" :selected="route.path === '/scene'">
+          <tabbar-item :link="{path:'/scene'}" :selected="route.path.indexOf('/scene') !== -1">
             <span class="iconfont icon-scene" slot="icon" style="position:relative;top: -2px;"></span>
             <span slot="label">场景</span>
           </tabbar-item>
-          <tabbar-item :link="{path:'/more'}" :selected="route.path === '/more'">
+          <tabbar-item :link="{path:'/more'}" :selected="route.path.indexOf('/more') !== -1">
             <span class="iconfont icon-more" slot="icon"></span>
             <span slot="label">更多</span>
           </tabbar-item>
