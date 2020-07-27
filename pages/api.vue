@@ -42,11 +42,33 @@ export default {
           {
             title: 'actionsheet',
             path: '/apis/actionsheet'
+          }]
+        },
+        {
+          title:'图片',
+          content:[
+            {
+              title: 'previewImage',
+              path: '/apis/previewImage'
+            }
+          ]
+        },
+        {
+          title:'工具',
+          content:[
+            {
+            title: 'pickerDate',
+            path: '/apis/pickerDate'
           },
           {
-            title: 'previewImage',
-            path: '/apis/previewImage'
-          }]
+            title: 'encrypte',
+            path: '/apis/encrypte'
+          },
+          {
+            title: 'copyData',
+            path: '/apis/copyData'
+          }
+          ]
         },
         {
           title:'本地存储',

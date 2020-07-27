@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import axios from 'axios'
-import {Toast} from 'hae'
+import {Toast, base64} from 'hae'
 import {Loading} from 'hae'
 import {Confirm} from 'hae'
 import {Actionsheet} from 'hae'
 import {Previewer} from 'hae'
 import {Datetime} from 'hae'
+import {base64} from 'hae'
+import ClipboardJS from 'clipboard'
 const ToastConstructor = Vue.extend(Toast)
 let $vmToast
 const LoadingConstructor = Vue.extend(Loading)
@@ -18,6 +20,8 @@ const PreviewerConstructor = Vue.extend(Previewer)
 let $vmPreview
 const DatePickerConstructor = Vue.extend(Datetime)
 let $vmPickerDate
+let clipBoard = ''
+let isClick = true
 const Hae = {
   request: function (options) {
     axios({
@@ -381,11 +385,73 @@ const Hae = {
     }
     $vmPreview.show(options.index || 0)
   },
+  /**
+   * 日期选择器
+   * @param {object} options 
+   */
   pickerDate: function(options) {
     $vmPickerDate = new DatePickerConstructor({
       el: document.createElement('div')
     })
-    document.body.appendChild($vmPreview.$el)
+    $vmPickerDate.format = options.format || 'YYYY-MM-DD'
+    $vmPickerDate.clearText = options.title || '请选择'
+    $vmPickerDate.value = options.value || ''
+    $vmPickerDate.show = true
+    $vmPickerDate.confirmText = options.confirmText || '确定'
+    $vmPickerDate.cancelText = options.cancelText || '取消'
+    $vmPickerDate.pickerOptions.onConfirm = function (value) {
+      if(options.onConfirm) {
+        options.onConfirm(value)
+      }
+    }
+    $vmPickerDate.pickerOptions.onHide = function() {
+      if(options.onHide) {
+        options.onHide()
+      }
+    }
+  },
+/**
+ * base64加密
+ * @param {string} content 
+ */
+  encrypt: function(content) {
+    return base64.encode(content)
+  },
+  /**
+   * base64解密
+   * @param {string} data 
+   */
+  decrypt:function(data) {
+    return base64.decode(data)
+  },
+  copyData:function(el,data) {
+    if (!isClick) {
+      return;
+    }
+    if (clipBoard) {
+      clipBoard.destroy();
+    }
+    clipBoard = new ClipboardJS(el, {
+      text: function() {
+        isClick = true;
+        return data
+      }
+    })
+    clipBoard.on('success', function(e) {
+      hae.toast({
+        title:'复制成功'
+      })
+    })
+    
+    clipBoard.on('error', function(e) {
+      hae.toast({
+        title:'复制失败'
+      })
+    })
+    if (el) {
+      isClick = false;
+      el.click();
+    }
   }
 }
 if (window) {
