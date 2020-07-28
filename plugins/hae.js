@@ -55,7 +55,7 @@ const Hae = {
     formData.append(options.fileName, options.file)
     this.request({
       url: options.url,
-      method: 'post',
+      method: options.method || 'post',
       data: formData,
       headers: {
         'Content-Type': 'multipart/form-data'

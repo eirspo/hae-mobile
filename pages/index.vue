@@ -166,6 +166,50 @@ export default {
             {
               title: 'imgpreview',
               path: '/components/view/imgpreview'
+            },
+            {
+              title: 'line',
+              path: '/components/view/chart/line'
+            },
+            {
+              title: 'smoothLine',
+              path: '/components/view/chart/smoothLine'
+            },
+            {
+              title: 'realTimeLine',
+              path: '/components/view/chart/realTimeLine'
+            },
+            {
+              title: 'compareLine',
+              path: '/components/view/chart/compareLine'
+            },
+            {
+              title: 'column',
+              path: '/components/view/chart/column'
+            },
+            {
+              title: 'columnPercent',
+              path: '/components/view/chart/columnPercent'
+            },
+            {
+              title: 'columnGroup',
+              path: '/components/view/chart/columnGroup'
+            },
+            {
+              title: 'columnCascade',
+              path: '/components/view/chart/columnCascade'
+            },
+            {
+              title: 'round',
+              path: '/components/view/chart/round'
+            },
+            {
+              title: 'roundPercent',
+              path: '/components/view/chart/roundPercent'
+            },
+            {
+              title: 'roundEmpty',
+              path: '/components/view/chart/roundEmpty'
             }
           ]
         },
