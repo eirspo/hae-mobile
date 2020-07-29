@@ -16,7 +16,7 @@
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/proxy": "^2.0.1",
     "clipboard": "^2.0.6",
-    "hae": "^1.0.22",
+    "hae": "^1.0.23",
     "nuxt": "1.4.2"
   },
   "devDependencies": {

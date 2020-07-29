@@ -309,10 +309,10 @@ const Hae = {
    *  showCancel {boolean} 是否显示取消按钮
    *  cancelText {string} 取消按钮文字
    *  closeOnclickMask {boolean} 点击mask遮罩是否关闭actionsheet
-   *  closeOnClickMask {boolean} 点击菜单按钮是否关闭actionsheet
+   *  closeOnClickMenu {boolean} 点击菜单按钮是否关闭actionsheet
    *  menus {array} 数据列表，形式： [{label:'text',type:'disabled'},'text',{label:'<p style="color:red;">text</p>'}]
    *  onClickMask {function} 点击mask遮罩回调
-   *  onMenuClick {function} 点击菜单回调
+   *  onClickMenu {function} 点击菜单回调
    * }
    */
   showActionsheet: function(options) {
@@ -339,9 +339,9 @@ const Hae = {
     }
     $vmActionsheet.emitEvent = function(event, index, res) {
       $vmActionsheet.value = false
-      if(options.onMenuClick) {
+      if(options.onClickMenu) {
         if(index === undefined) {
-          options.onMenuClick({
+          options.onClickMenu({
             type:'cancel',
             data: ''
           })
