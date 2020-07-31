@@ -14,5 +14,5 @@ yarn-error.log
 *.ntvs*
 *.njsproj
 *.sln
-.history
+.history/
 .editorconfig
