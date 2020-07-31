@@ -15,4 +15,4 @@ yarn-error.log
 *.njsproj
 *.sln
 .history/
-*.editorconfig
+.editorconfig
