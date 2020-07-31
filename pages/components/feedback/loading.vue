@@ -18,7 +18,6 @@ import { Group } from 'hae'
 import { XSwitch } from 'hae'
 import { XButton } from 'hae'
 import { TransferDomDirective as TransferDom } from 'hae'
-
 export default {
   directives: {
     TransferDom
