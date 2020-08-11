@@ -160,10 +160,10 @@ const Hae = {
       $vmLoading = new LoadingConstructor({
         el: document.createElement('div')
       })
-      $vmLoading.show = true
-      $vmLoading.text = title || ''
       document.body.appendChild($vmLoading.$el)
     }
+    $vmLoading.show = true
+    $vmLoading.text = title || ''
   },
   /**
    * 关闭加载loading

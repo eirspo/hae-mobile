@@ -1,6 +1,6 @@
 {
   "name": "hae-mobile",
-  "version": "0.8.0-alpha",
+  "version": "0.9.0",
   "description": "H5 App Framework Based On EOA-UI",
   "author": "missing-star <1652575963@qq.com>",
   "private": false,
@@ -16,7 +16,7 @@
     "@nuxtjs/axios": "^5.12.0",
     "@nuxtjs/proxy": "^2.0.1",
     "clipboard": "^2.0.6",
-    "hae": "^1.0.23",
+    "hae": "^1.0.28",
     "nuxt": "1.4.2"
   },
   "devDependencies": {
